@@ -1,0 +1,437 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+.head {
+  background-image: url(./Images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+.head1 {
+  position: relative;
+  background: rgba(0, 0, 0, 0.938);
+  height: 100vh;
+  width: 100vw;
+}
+header {
+  min-height: 10vh;
+}
+.logo {
+  position: absolute;
+  height: 15vh;
+  padding-left: 5rem;
+  top: 10px;
+}
+div.dade {
+  position: absolute;
+  font-size: 2rem;
+  width: fit-content;
+  top: 2.5rem;
+  left: 10%;
+}
+div.dade h1 {
+  color: #000000;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3.5rem;
+  padding-left: 20px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.9rem;
+  margin-right: 17%;
+}
+li {
+  float: right;
+}
+li a.fft {
+  display: inline-block;
+  text-align: right;
+  padding: 1.8rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+}
+a.fft:hover {
+  font-weight: 500;
+  color: #ffffff;
+  border-bottom: 2px solid #0091ff;
+}
+li .dropdown {
+  display: inline-block;
+  text-align: right;
+  padding: 1.8rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+}
+a.dropdown:hover {
+  font-weight: 500;
+  color: #ffffff;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.every {
+  height: 60vh;
+  width: 100%;
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.every h2 {
+  color: rgb(255, 255, 255);
+  font-size: 5.5rem;
+  line-height: 6rem;
+  position: relative;
+}
+
+.sign {
+  text-decoration: none;
+  position: absolute;
+  right: 4%;
+  top: 3%;
+  background-color: #008cff;
+  height: 3rem;
+  width: 12rem;
+  margin-top: 1.125rem;
+  padding: 0.6rem 1rem 3rem 1rem;
+  text-align: center;
+  border-radius: 1.875rem;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+a:hover.sign {
+  background-color: white;
+  color: #008cff;
+}
+.chop {
+  right: 43%;
+}
+.chop2 {
+  left: 9.5%;
+  top: 440px;
+}
+.chop,
+.chop2 {
+  position: absolute;
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: 12vw;
+  cursor: pointer;
+  background-color: #91983b;
+  background: linear-gradient(135deg, #03f75c, #078e12);
+  color: rgb(255, 255, 255);
+  transition: ease-in-out;
+  transition: background-color 0.8s, color 0.8s;
+  transition: font-size 0.8s, color 0.8s;
+  transition: width 0.8s, color 0.8s;
+  border-radius: 15px;
+  border: none;
+  height: 4vw;
+}
+.chop:hover {
+  font-size: 1.7rem;
+  background-color: rgb(255, 217, 0);
+  background: linear-gradient(135deg, #ffd700, #e6ac00);
+  color: rgb(0, 0, 0);
+}
+.chop2:hover {
+  font-size: 1.7rem;
+  background-color: rgb(255, 217, 0);
+  background: linear-gradient(135deg, #ffd700, #e6ac00);
+  color: rgb(0, 0, 0);
+}
+/* this is the second section */
+.book2 {
+  position: relative;
+  background-image: url(./Images/hero2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(11, 11, 11);
+  padding: 40px 0;
+  min-height: 20vh;
+}
+.write {
+  width: 85%;
+  font-size: 1.8rem;
+}
+.write h2 {
+  color: #ffffff;
+  font-size: 4rem;
+}
+.write p {
+  font-size: 2rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.image:hover {
+  color: #91983b;
+}
+
+.image {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 8px;
+  flex: 1 1 350px;
+  cursor: pointer;
+  background-color: black;
+  background: linear-gradient(135deg, #f5f4ed, #64cd0852);
+}
+.image img:hover {
+  width: 95%;
+}
+.image img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: width 0.3s, color 0.8s;
+}
+.image p {
+  font-size: 2rem;
+  background-color: white;
+  transition: width 0.3s, color 0.8s;
+}
+
+span {
+  font-weight: bold;
+  color: #e6ac00;
+}
+/* part b of the second section */
+section.book2b {
+  height: 90vh;
+  width: 100%;
+}
+.change {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+}
+.flex {
+  height: 115%;
+  width: 32%;
+  background: #019eff;
+  background: linear-gradient(135deg, #ffffff, #cccccb);
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+.flex h1 {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  margin-left: 4rem;
+  padding-top: 2rem;
+}
+
+.form {
+  margin-top: 2rem;
+}
+.wth {
+  margin-top: 6px;
+  margin-left: 4rem;
+  width: 16rem;
+  height: 3.2rem;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+.wth2 {
+  margin-top: 6px;
+  margin-left: 2.8rem;
+  width: 16rem;
+  height: 3.4rem;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+.twol {
+  color: #000000;
+  font-size: 1.6rem;
+  margin-left: 4rem;
+}
+.twol1 {
+  margin-left: 1rem;
+}
+.wth1 {
+  padding-top: 10px;
+  margin-left: 40px;
+  width: 35rem;
+  height: 3.4rem;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+.vl2 {
+  color: white;
+  font-size: 12px;
+  color: #deb887;
+  height: 3.5rem;
+  width: 120px;
+  margin-left: 15rem;
+  border-radius: 1rem;
+  font-family: arial black;
+  border: none;
+  margin-top: 1.5rem;
+}
+.vl2:hover {
+  background-color: #deb887;
+  color: white;
+}
+.flex1 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 3rem;
+}
+.flex1 h1 {
+  font-size: 5rem;
+  color: #ffffff;
+}
+.flex1 p {
+  line-height: 5rem;
+  font-size: 2.5rem;
+}
+/* this is the forth div */
+.hero2 {
+  background-image: url("./Images/hero3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 100px 0;
+  min-height: 30vh;
+}
+
+.hero2 p {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 280;
+  cursor: pointer;
+}
+.hero2 h2 {
+  padding-top: 50px;
+  font-size: 4rem;
+  color: #e6ac00;
+  font-weight: 500;
+  cursor: pointer;
+}
+.hero2 p i {
+  color: rgb(255, 255, 255);
+  transition: font-size 0.2s, color 0.8s;
+}
+span {
+  font-weight: bold;
+  color: #e6ac00;
+}
+
+.hero2 p i:hover {
+  font-size: 2.5rem;
+  color: #0bff6d;
+}
+/* this is anithher div */
+section.white {
+  width: 100vh;
+  background: white;
+}
+.wit {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+.wid p {
+  font-size: 2.8rem;
+  text-transform: capitalize;
+}
+/* footer area */
+.book4 {
+  height: 70vh;
+  width: 100vw;
+  background-color: #000000;
+}
+.fin {
+  display: flex;
+  justify-content: space-evenly;
+}
+.foot1 {
+  margin-top: 5rem;
+  left: 30px;
+}
+.foot1 img {
+  padding-left: 2rem;
+  height: 10vh;
+  margin-bottom: 20px;
+}
+
+.book4 h2 {
+  color: #00ff80;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+}
+.book4 p {
+  color: white;
+  font-size: 2rem;
+
+  line-height: 3.8rem;
+}
+
+a.cha {
+  color: white;
+  text-decoration: none;
+}
+a.cha:hover {
+  color: rgb(0, 255, 132);
+  text-decoration: underline;
+}
